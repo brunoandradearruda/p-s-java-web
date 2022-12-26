@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/aluno")
-public class aAlunoResource {
+public class AlunoResource {
 
     @Autowired
     private AlunoService alunoService;
