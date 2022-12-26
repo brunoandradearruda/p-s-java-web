@@ -1,8 +1,5 @@
 package dev.fujioka.java.avancado.web.resource;
-
-import dev.fujioka.java.avancado.web.model.Curso;
 import dev.fujioka.java.avancado.web.model.Unipe;
-
 import dev.fujioka.java.avancado.web.service.UnipeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

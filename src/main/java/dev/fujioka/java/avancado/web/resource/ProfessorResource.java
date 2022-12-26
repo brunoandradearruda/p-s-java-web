@@ -1,6 +1,4 @@
 package dev.fujioka.java.avancado.web.resource;
-
-import dev.fujioka.java.avancado.web.model.Aluno;
 import dev.fujioka.java.avancado.web.model.Professor;
 import dev.fujioka.java.avancado.web.service.ProfessorService;
 import org.springframework.beans.factory.annotation.Autowired;

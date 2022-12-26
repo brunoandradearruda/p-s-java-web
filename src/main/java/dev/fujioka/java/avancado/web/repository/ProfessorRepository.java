@@ -1,6 +1,5 @@
 package dev.fujioka.java.avancado.web.repository;
 import dev.fujioka.java.avancado.web.model.Professor;
-import dev.fujioka.java.avancado.web.model.Unipe;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

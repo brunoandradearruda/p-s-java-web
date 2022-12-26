@@ -1,5 +1,4 @@
 package dev.fujioka.java.avancado.web.resource;
-
 import dev.fujioka.java.avancado.web.model.Aluno;
 import dev.fujioka.java.avancado.web.service.AlunoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/aluno")
-public class AlunoResource {
+public class aAlunoResource {
 
     @Autowired
     private AlunoService alunoService;
