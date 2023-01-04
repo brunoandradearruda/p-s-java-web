@@ -20,7 +20,7 @@ public class Unipe {
 
     private String curso;
 
-    private BigDecimal valorMensalidade;
+    private double valorMensalidade;
 
 
 
