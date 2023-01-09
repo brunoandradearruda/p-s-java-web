@@ -1,11 +1,8 @@
 package dev.fujioka.java.avancado.web.service;
-import dev.fujioka.java.avancado.web.model.Curso;
 import dev.fujioka.java.avancado.web.model.Professor;
-import dev.fujioka.java.avancado.web.repository.CursoRepository;
 import dev.fujioka.java.avancado.web.repository.ProfessorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 import java.util.Objects;
 
