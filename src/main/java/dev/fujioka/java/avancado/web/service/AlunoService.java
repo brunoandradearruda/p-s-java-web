@@ -1,6 +1,6 @@
-package dev.fujioka.brunoarruda.service;
-import dev.fujioka.brunoarruda.model.Aluno;
-import dev.fujioka.brunoarruda.repository.AlunoRepository;
+package dev.fujioka.java.avancado.web.service;
+import dev.fujioka.java.avancado.web.model.Aluno;
+import dev.fujioka.java.avancado.web.repository.AlunoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;

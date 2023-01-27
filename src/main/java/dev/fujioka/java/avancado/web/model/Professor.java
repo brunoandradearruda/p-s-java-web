@@ -1,11 +1,11 @@
-package dev.fujioka.brunoarruda.model;
+package dev.fujioka.java.avancado.web.model;
 import lombok.Getter;
 import lombok.Setter;
 import javax.persistence.*;
 @Getter
 @Setter
 @Entity
-public class Aluno {
+public class Professor {
 
     @Id
     @GeneratedValue
@@ -13,6 +13,6 @@ public class Aluno {
 
     private String nome;
 
-    private String matricula;
+    private String disciplina;
 
 }

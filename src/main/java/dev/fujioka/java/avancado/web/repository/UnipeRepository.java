@@ -1,5 +1,5 @@
-package dev.fujioka.brunoarruda.repository;
-import dev.fujioka.brunoarruda.model.Unipe;
+package dev.fujioka.java.avancado.web.repository;
+import dev.fujioka.java.avancado.web.model.Unipe;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
