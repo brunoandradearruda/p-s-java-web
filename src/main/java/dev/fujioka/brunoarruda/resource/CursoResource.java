@@ -1,6 +1,6 @@
-package dev.fujioka.java.avancado.web.resource;
-import dev.fujioka.java.avancado.web.model.Curso;
-import dev.fujioka.java.avancado.web.service.CursoService;
+package dev.fujioka.brunoarruda.resource;
+import dev.fujioka.brunoarruda.model.Curso;
+import dev.fujioka.brunoarruda.service.CursoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

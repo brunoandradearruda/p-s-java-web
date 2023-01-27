@@ -1,6 +1,6 @@
-package dev.fujioka.java.avancado.web.service;
-import dev.fujioka.java.avancado.web.model.Unipe;
-import dev.fujioka.java.avancado.web.repository.UnipeRepository;
+package dev.fujioka.brunoarruda.service;
+import dev.fujioka.brunoarruda.model.Unipe;
+import dev.fujioka.brunoarruda.repository.UnipeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;

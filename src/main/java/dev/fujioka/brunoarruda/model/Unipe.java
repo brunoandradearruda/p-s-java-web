@@ -1,4 +1,4 @@
-package dev.fujioka.java.avancado.web.model;
+package dev.fujioka.brunoarruda.model;
 
 
 import lombok.Getter;
