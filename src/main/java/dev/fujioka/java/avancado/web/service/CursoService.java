@@ -2,6 +2,7 @@ package dev.fujioka.java.avancado.web.service;
 import dev.fujioka.java.avancado.web.model.Curso;
 import dev.fujioka.java.avancado.web.repository.CursoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jms.core.JmsTemplate;
 import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Objects;
@@ -11,8 +12,13 @@ public class CursoService {
 
     @Autowired
     private CursoRepository cursorepository;
+    @Autowired
+    private JmsTemplate jmsTemplate;
 
     public Curso salvar(Curso curso){
+
+        jmsTemplate.convertAndSend("Curso", curso );
+
         return cursorepository.save(curso);
     }
 

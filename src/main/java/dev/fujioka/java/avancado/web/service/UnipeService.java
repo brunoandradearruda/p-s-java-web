@@ -1,8 +1,11 @@
 package dev.fujioka.java.avancado.web.service;
+
 import dev.fujioka.java.avancado.web.model.Unipe;
 import dev.fujioka.java.avancado.web.repository.UnipeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jms.core.JmsTemplate;
 import org.springframework.stereotype.Service;
+
 import java.util.List;
 import java.util.Objects;
 
@@ -12,7 +15,13 @@ public class UnipeService {
     @Autowired
     private UnipeRepository unipeRepository;
 
+    @Autowired
+    private JmsTemplate jmsTemplate;
+
     public Unipe salvar(Unipe curso) {
+
+        jmsTemplate.convertAndSend("Unipê", curso);
+
         return unipeRepository.save(curso);
     }
 

@@ -7,11 +7,12 @@ import lombok.Setter;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import java.io.Serializable;
 import java.math.BigDecimal;
 @Getter
 @Setter
 @Entity
-public class Unipe {
+public class Unipe implements Serializable {
 
     @Id
     @GeneratedValue
