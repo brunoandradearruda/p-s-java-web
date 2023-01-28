@@ -1,4 +1,5 @@
 package dev.fujioka.java.avancado.web.resource;
+import dev.fujioka.java.avancado.web.dto.ProfessorDTO;
 import dev.fujioka.java.avancado.web.model.Professor;
 import dev.fujioka.java.avancado.web.service.ProfessorService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +15,7 @@ public class ProfessorResource {
     private ProfessorService ProfessorService;
 
     @PostMapping
-    public ResponseEntity<Professor> salvar(@RequestBody Professor professor){
+    public ResponseEntity<ProfessorDTO> salvar(@RequestBody Professor professor){
         return ResponseEntity.ok(ProfessorService.salvar(professor));
     }
 
