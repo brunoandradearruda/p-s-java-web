@@ -1,5 +1,8 @@
 package dev.fujioka.java.avancado.web.service;
 
+import dev.fujioka.java.avancado.web.dto.ProfessorDTO;
+import dev.fujioka.java.avancado.web.dto.UnipeDTO;
+import dev.fujioka.java.avancado.web.model.Professor;
 import dev.fujioka.java.avancado.web.model.Unipe;
 import dev.fujioka.java.avancado.web.repository.UnipeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,11 +21,16 @@ public class UnipeService {
     @Autowired
     private JmsTemplate jmsTemplate;
 
-    public Unipe salvar(Unipe curso) {
 
-        jmsTemplate.convertAndSend("Unipê", curso);
+    public UnipeDTO salvar(Unipe unipe) {
+        unipe = unipeRepository.save(unipe);
 
-        return unipeRepository.save(curso);
+        jmsTemplate.convertAndSend("Unipe", unipe);
+
+        return UnipeDTO.builder()
+                .curso(unipe.getCurso())
+                .valorMensalidade(unipe.getValorMensalidade())
+                .build();
     }
 
     public List<Unipe> listarCurso() {

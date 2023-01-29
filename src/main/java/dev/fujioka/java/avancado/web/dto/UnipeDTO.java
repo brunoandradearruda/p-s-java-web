@@ -12,5 +12,5 @@ import lombok.Setter;
 public class UnipeDTO {
 
     String curso;
-    String valorMensalidade;
+    Double valorMensalidade;
 }

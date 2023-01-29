@@ -1,4 +1,5 @@
 package dev.fujioka.java.avancado.web.resource;
+import dev.fujioka.java.avancado.web.dto.UnipeDTO;
 import dev.fujioka.java.avancado.web.model.Unipe;
 import dev.fujioka.java.avancado.web.service.UnipeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +15,7 @@ public class UnipeResource {
     private UnipeService unipeService;
 
     @PostMapping
-    public ResponseEntity<Unipe> salvar(@RequestBody Unipe curso){
+    public ResponseEntity<UnipeDTO> salvar(@RequestBody Unipe curso){
         return ResponseEntity.ok(unipeService.salvar(curso));
     }
 
